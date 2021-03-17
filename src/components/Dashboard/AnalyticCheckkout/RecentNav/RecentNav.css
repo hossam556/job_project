@@ -1,0 +1,39 @@
+.recent_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.recent_subnav1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+.recent_subnav2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+.recent_p1{
+    font-size: 16px;
+    font-weight: 700;
+}
+.recent_p2{
+    font-size: 12px;
+    font-weight: 700;
+}
+.recent_p3{
+    font-size: 12px;
+    font-weight: 700;
+    opacity: 0.4;
+}
+.recent_p4{
+    font-size: 10px;
+    font-weight: 700;
+}
+.recent_p2{
+    font-size: 12px;
+    font-weight: 700;
+}

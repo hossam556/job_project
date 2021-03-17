@@ -1,0 +1,19 @@
+.recentCheckout_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+.recentCheckout_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+}
+.recentCheckout_p1{
+    font-size: 12px;
+    font-weight: 400;
+}
+.recentListData{
+    list-style-type: none;
+}

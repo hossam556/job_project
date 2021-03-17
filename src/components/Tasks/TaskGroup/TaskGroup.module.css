@@ -1,0 +1,31 @@
+.task{
+    flex: 25%;
+    background-color: #0E0D1F;
+    box-sizing: border-box;
+    
+}
+.container{
+    width: 86%;
+    margin:auto;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.titleP{
+    font-size: 16px;
+    font-weight: 700;
+}
+.create{
+    color:#27EDE2 ;
+    font-size: 12px;
+    font-weight: 600;
+}
+.createGroup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 27%;
+}

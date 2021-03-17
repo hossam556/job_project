@@ -1,0 +1,43 @@
+.sidebarCard_cont{
+    position: relative;
+}
+.sidebarCard_btn1{
+    text-decoration: none;
+    margin-top: 5px;
+    color: white;
+    display: inline-block;
+    background: #30DAD0;
+    border-radius: 8px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    width: 70%;
+    padding :10px 10px;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.sidebarCard_icon{
+    background-color:#22CEC4 ;
+    display: inline-block;
+    padding :10px 10px;
+    font-size: 10px;
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    border-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.sidebar_date{
+    font-size: 16px;
+}
+.sidebarCard_btn2{
+    display: inline-block;
+    background-color: white;
+    padding :8px 10px;
+    width: 90%;
+    color: #30DAD0;
+    border-radius: 8px;
+    font-size: 12px;
+}

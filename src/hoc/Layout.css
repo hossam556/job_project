@@ -1,0 +1,8 @@
+.layout{
+    display: flex;
+     /* height: 100vh; */
+    grid-template-rows: auto auto;
+}
+.main{
+    flex: 92%;
+}

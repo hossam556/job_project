@@ -1,0 +1,13 @@
+.v1{
+    color: rgba(255, 255, 255, 0.4);
+}
+.nav_label{
+    width: 240px;
+    background-color: #282443;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 15px;
+}

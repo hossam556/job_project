@@ -1,0 +1,19 @@
+.analytic{
+    flex: 70%;
+    color: white;
+    box-sizing: border-box;
+    padding:0 40px;
+}
+.analytic_cards{
+    display: flex;
+}
+.analytic_head{
+    font-size: 16px;
+    font-weight: 700;
+}
+.analytic_2cards{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

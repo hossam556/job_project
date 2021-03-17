@@ -1,0 +1,32 @@
+.favourite{
+    flex: 25%;
+    background-color: #0E0D1F;
+    box-sizing: border-box;
+}
+.fav_container{
+    width: 86%;
+    margin:auto;
+}
+.fav_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+.fav_btn{
+    display: inline-block;
+    padding-right: 40px;
+    padding-left: 7px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: 1px solid rgba(250,250,250,0.2);
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+    font-size: 12px;
+}
+.fav_chart{
+    position: absolute;
+    left: 93%;
+}

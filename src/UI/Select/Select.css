@@ -1,0 +1,14 @@
+
+.select_box2{
+  position: relative;
+}
+.select_box2 p{
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

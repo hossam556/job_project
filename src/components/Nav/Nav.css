@@ -1,0 +1,46 @@
+.nav{
+    background-color: #282443;
+    box-sizing: border-box;
+    display: flex;
+    height: 70px;
+}
+
+.nav_title{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+.nav_icons{
+    display: inline-block;
+    padding: 16px 16px;
+    background-color: #5D5781;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+.nav_icons_box{
+   position: relative;
+}
+
+.nav_p{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+.what{
+    position: absolute;
+    left: 8px;
+    top: 7px;
+}
+.notification{
+    position: absolute;
+    left: 51px;
+    top: 9px;
+}
+.avatar{
+    position: absolute;
+    left: 72px;
+    top: -5px;
+}

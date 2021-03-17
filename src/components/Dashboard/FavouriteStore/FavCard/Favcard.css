@@ -1,0 +1,49 @@
+.favCard_price{
+    display: flex;
+    padding: 12px;
+}
+.favCard_link_cont{
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(250, 250, 250 ,0.2);
+    width: 100%;
+    padding: 12px;
+    position: relative;
+
+}
+.link_icon{
+    position: absolute;
+    bottom: 13px;
+    left: 10px;
+}
+.price_cont1{
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+.price_cont2{
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 47px;
+    position: relative;
+}
+.price_cont1_icon{
+    position: absolute;
+    left: 20px;
+    top: 8px;
+}
+.favCard_dote1{
+    position: absolute;
+    left: 310px;
+    top: 32px;
+}
+.favCard_dote2{
+    position: absolute;
+    left: 310px;
+    top: 25px;
+}
+.favCard_dote3{
+    position: absolute;
+    left: 310px;
+    top: 19px;
+
+}
