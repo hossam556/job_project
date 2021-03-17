@@ -5,7 +5,6 @@ import './CheckoutCards.css'
 import Select2 from '../../../../UI/Select2/Select2'
 import PieChart from './PieChart'
 
-
 const CheckoutCards = (props) => {
     const classes = useStyles();
 
@@ -46,8 +45,7 @@ const useStyles = makeStyles({
       borderRadius: '10px',
       color :'white',
       width:'280px',
-      height:'180px'
-      
+      height:'180px',
     },
    
 })

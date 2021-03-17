@@ -1,0 +1,11 @@
+.calendarItem{
+   text-decoration: none;
+   color: white;
+   font-size: 10px;
+   font-weight: 700;
+   display: block;
+   padding: 6px 26px;
+   background-color:#373253 ;
+   border-radius: 12px;
+   max-width: 20px;
+}

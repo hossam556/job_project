@@ -5,14 +5,14 @@ import './Favcard.css'
 
 
 
-const FavCard = () => {
+const FavCard = (props) => {
     const classes = useStyles();
 
     return (
         <Card className={classes.root} variant="outlined">
            <div className='favCard_link_cont'>
-               <span style={{fontSize:'20px'}}>Amazon</span><br/>
-               <span style={{fontSize:'10px' , marginLeft:'17px'}}><img src='./icons/link.png' className='link_icon'/>http://amazon.com/</span>
+               <span style={{fontSize:'20px'}}>{props.title}</span><br/>
+               <span style={{fontSize:'10px' , marginLeft:'17px' , fontWeight:'700'}}><img src='./icons/link.png' className='link_icon'/>{props.link}</span>
                <img src='/icons/dote.png' className='favCard_dote1'/>
                <img src='/icons/dote.png' className='favCard_dote2'/>
                <img src='/icons/dote.png' className='favCard_dote3'/>

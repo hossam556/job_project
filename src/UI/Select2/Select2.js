@@ -38,7 +38,7 @@ const Select2 = (props) => {
   
 
     return (
-        <div className='box'>
+        <div >
             <div className={classes.box}>
         {
             daily && <p onClick={()=>setshowdrop(!showdrop)}>{props.day} 

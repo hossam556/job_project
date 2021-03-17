@@ -1,5 +1,7 @@
 .box{
     position: relative;
+    box-sizing: border-box;
+    width: 70px;
 }
 .box p{
     font-size: 12px;

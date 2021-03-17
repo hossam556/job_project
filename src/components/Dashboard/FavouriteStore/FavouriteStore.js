@@ -10,10 +10,18 @@ const FavouriteStore = () => {
                 <p style={{fontSize:'16px' , fontWeight:'700'}}>Favourite Store</p>
                 <a href='#' className='fav_btn'>sort by <img src='./icons/chart.png' className='fav_chart'/></a>
              </div>
-             <Favcard/>
-             <Favcard/>
-             <Favcard/>
-             <Favcard/>
+             <Favcard 
+              title='Amazon'
+              link='http://amazon.com/'/>
+             <Favcard
+              title='Target'
+              link='http://target.com/'/>
+             <Favcard
+              title='Walmart'
+              link='http://walmart.com/'/>
+             <Favcard
+              title='Nike'
+              link='http://nikestore.com/'/>
             </div>
         </div>
     )

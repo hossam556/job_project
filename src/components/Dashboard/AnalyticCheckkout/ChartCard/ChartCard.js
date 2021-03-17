@@ -52,8 +52,9 @@ const CheckoutCards = (props) => {
                </div>
                {/* <p style={{fontSize:'10px', fontWeight:'700' }}> 2020</p> */}
            </div>}
-           {/* <Chart/> */}
+           <div className='chaart_container'>
            <Chaart/>
+           </div>
         </Card>
     )
 }
@@ -74,7 +75,8 @@ const useStyles = makeStyles({
       borderRadius: '10px',
       color :'white',
       marginLeft:'20px',
-    //   height:'350px'
+      maxHeight :'480px',
+      position:'relative'
     },
    
 })

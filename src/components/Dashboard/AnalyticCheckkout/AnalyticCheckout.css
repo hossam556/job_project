@@ -12,8 +12,32 @@
     font-weight: 700;
 }
 .analytic_2cards{
-    height: 400px;
+    height: 390px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+.share_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.share_wrapper{
+    font-size:12px ;
+    font-weight: 400;
+    display: inline-block;
+    padding-right: 30px;
+    padding-left: 9px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #1F1B37;
+    border-radius: 15px;
+    text-align: top;
+}
+.shareIcon{
+    position: absolute;
+    left: 97.4%;
+    top: 21px;
+}
+

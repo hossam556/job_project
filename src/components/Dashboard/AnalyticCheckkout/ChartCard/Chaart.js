@@ -1,5 +1,11 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
+import {connect} from 'react-redux'
+import axios from 'axios'
+import Spinner from '../../../../UI/Spinner/Spinner'
+
+
+
 
 class App extends Component {
     constructor(props) {
@@ -8,59 +14,65 @@ class App extends Component {
       this.state = {
       
         series: [{
-          name: 'PRODUCT A',
-          data: [24, 55, 41, 67, 22, 43,44, 55, 41, 67, 22, 43],
+          name: 'Success',
+          data: [],
         }, {
-          name: 'PRODUCT B',
-          data: [33, 23, 20, 8, 13, 27,13, 23, 20, 8, 13, 27]
+          name: 'Decline',
+          data: []
         }, ],
         options: {
           colors:['#27DAE1','#FF3D96'],
           chart: {
             type: 'bar',
-            height: 200,
+            // height: '200px',
+            // width:'100px',
             stacked: true,
             toolbar: {
               show: false
             },
-            offsetX: 10
-            // zoom: {
-            //   enabled: true
-            // }
+            // offsetX: 10
+            
+          },
+          tooltip:{
+             theme :true,
+             style: {
+              fontSize: '12px',
+              backgroundColor:'blue'
+            },
+           
+          },
+          grid :{
+            show:false ,
+            strokeDashArray: 5,
+            row: {
+              opacity: 0.5
+          },  
+         padding: {
+          top: 0,
+          right: 0,
+          bottom: 0,
+          left: 15
+         },  
+
           },
           
-         
+          dataLabels: {
+            enabled: false
+          },
           plotOptions: {
             bar: {
               borderRadius: 0,
               horizontal: false,
-              columnWidth: '10%',
-            //   colors: {
-            //     ranges: [{
-            //       from: 0,
-            //       to: 0,
-            //         color: 'red',
-            //     },],
-            //     backgroundBarColors:[] ,
-            //     backgroundBarOpacity: 1,
-            //     backgroundBarRadius: 0,
-            // },
-            dataLabels: {
-              enabled: false,
-              position: 'center',
-              
-              // maxItems: 100,
-          }
-
+              columnWidth: '8%',
+          
             },
-            dataLabels:{
-              enabled:true,
-
-            }
           },
           xaxis: {
             type: 'category',
-            categories:['1', '2', '3', '4','5','6','7','8','9','10','11','12'],
+            axisBorder: {
+              show: false
+            },
+            categories:[],
             labels: {
               style: {
                   colors: ['white','white','white','white','white','white','white','white','white','white','white','white'],
@@ -82,13 +94,14 @@ class App extends Component {
                   fontSize: '10px',
                   fontFamily: 'Helvetica, Arial, sans-serif',
                   fontWeight: 400,
+                  
               },
           },
           },
-          // legend: {
-          //   position: 'right',
-          //   offsetY: 40
-          // },
+          legend: {
+            show:false ,
+           
+          },
           fill: {
             colors:['#27DAE1','#FF3D96']
            
@@ -100,23 +113,99 @@ class App extends Component {
     }
 
 
+    componentDidMount=()=>{
+      axios.get('https://dashboard-433a3-default-rtdb.firebaseio.com/week.json').then(response=>
+      this.setState({
+        options:{
+          ...this.state.options ,
+          xaxis:{
+            ...this.state.options.xaxis,
+            categories:response.data.labels
+          }
+        },
+        series:[
+          {
+            name: 'Success',
+            data:response.data.succeed ,
+          },
+          {
+            name: 'Decline',
+            data:response.data.declined ,
+          },
+        ]
+      })
+    )
+    }
+        
+    componentDidUpdate=()=>{
+              let period = null ;
+              if(this.props.week){
+            
+                period='week';
+              }else if(this.props.month){
+              
+                period='month'
+              }else if(this.props.year){
+                
+                period='year'
+              };  
+             
+              axios.get(`https://dashboard-433a3-default-rtdb.firebaseio.com/${period}.json`).then(response=>
+              this.setState({
+                options:{
+                  ...this.state.options ,
+                  xaxis:{
+                    ...this.state.options.xaxis,
+                    categories:response.data.labels
+                  }
+                },
+                series:[
+                  {
+                    name: 'PRODUCT A',
+                    data:response.data.succeed ,
+                  },
+                  {
+                    name: 'PRODUCT B',
+                    data:response.data.declined ,
+                  },
+                ]
+              })
+              )
+    }
+
+
+
     render() {
+      let chart = <Spinner/>; 
+
+      if(this.props.week || this.props.month || this.props.year){
+             
+      chart= <div className="row">
+           <div className="mixed-chart">
+          <Chart
+            options={this.state.options}
+            series={this.state.series}
+            type="bar"
+            height={280}
+          />
+        </div>
+      </div>
+      }
+
       return (
         <div className="app">
-          <div className="row">
-            <div className="mixed-chart">
-              <Chart
-                options={this.state.options}
-                series={this.state.series}
-                type="bar"
-                width="600"
-                
-              />
-            </div>
-          </div>
+          {chart}
         </div>
       );
     }
   }
+
+  const mapStateToprops = state =>{
+    return{
+        week : state.weekly,
+        month : state.monthly,
+        year : state.yearly,
+    }
+  }  
   
-  export default App;
+  export default connect(mapStateToprops)(App);
