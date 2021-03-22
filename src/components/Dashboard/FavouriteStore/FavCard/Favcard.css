@@ -13,37 +13,46 @@
 .link_icon{
     position: absolute;
     bottom: 13px;
-    left: 10px;
+    left: 14px;
 }
 .price_cont1{
     width: 50%;
-    text-align: center;
+    padding-left: 27px;
     position: relative;
+    letter-spacing: 0.5px;
 }
 .price_cont2{
     width: 50%;
     box-sizing: border-box;
-    padding-left: 47px;
+    padding-left: 27px;
     position: relative;
+    padding-bottom: 7px;
+    letter-spacing: 0.5px;
+
 }
 .price_cont1_icon{
     position: absolute;
-    left: 20px;
+    left: 0px;
     top: 8px;
 }
 .favCard_dote1{
     position: absolute;
-    left: 310px;
+    left: 315px;
     top: 32px;
 }
 .favCard_dote2{
     position: absolute;
-    left: 310px;
+    left: 315px;
     top: 25px;
 }
 .favCard_dote3{
     position: absolute;
-    left: 310px;
+    left: 315px;
     top: 19px;
 
+}
+.favCard_link{
+    display: inline-block;
+    margin-top: 12px;
+    padding-left: 5px;
 }

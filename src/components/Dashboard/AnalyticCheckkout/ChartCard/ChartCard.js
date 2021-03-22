@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useState}from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import Chart from './Chart'
@@ -8,23 +8,35 @@ import {connect} from 'react-redux'
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import Chaart from './Chaart'
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import Select2 from '../../../../UI/Select2/Select2'
+
 
 const CheckoutCards = (props) => {
     const classes = useStyles();
 
+    const [show , setShow] = useState(false);
+
+    const calendarHandler =()=>{
+        setShow(!show)
+    }
+
     return (
         <Card className={classes.root} variant="outlined">
            <div className='chart_header'>
-              <span style={{fontSize:'14px' , fontWeight:'600'}}>Analytic</span>
+              <span style={{fontSize:'15px' , fontWeight:'600'}}>Analytic</span>
               <div className='chart_header1'>
                   <Select 
                   period='Weekly' />
-                  <span style={{fontSize:'12px', fontWeight:'400' }}>Store</span>
+                  <Select2 
+                    day='Store'
+                    month='Month'
+                    year='year'/>
               </div>
            </div>
           {props.week && <div className='chart_header2'>
-               <p style={{fontSize:'10px', fontWeight:'400'}}><span style={{opacity:'0.4', paddingRight:'10px'}}>showing Data</span> : 12 August-25 August</p>
-               <p style={{fontSize:'10px', fontWeight:'400' }}>August 2020</p>
+               <p className='chart_header2_p'><span style={{opacity:'0.4', paddingRight:'10px'}}>showing Data</span> : 12 August-25 August</p>
+               <p className='chart_header2_p'>August 2020 <img src='./icons/calendar.png' className='chart_calendar' /></p>
            </div>}
            {props.month && <div className='chart_header2'>
                <div className='chart_header2box'>
@@ -32,13 +44,13 @@ const CheckoutCards = (props) => {
                    <ArrowForwardIcon className='chart_arrow2' style={{fontSize:'16px'}}/>
                    <a href='#' className='chart_header_a'></a>
                    <a href='#' className='chart_header_a2'></a>
-                 <p style={{color:'#27DAE1'}}>12 Months</p>
-                 <p>6 Months</p>
-                 <p>3 Months</p>
+                 <p style={{color:'#27DAE1',marginBottom:'0px'}}>12 Months</p>
+                 <p style={{marginBottom:'0px'}}>6 Months</p>
+                 <p style={{marginBottom:'0px'}}>3 Months</p>
                </div>
-               <p style={{fontSize:'10px', fontWeight:'700' }}> 2020</p>
+               <p style={{fontSize:'10px', fontWeight:'700' ,marginBottom:'0px'}}> 2020 <img src='./icons/calendar.png' className='chart_calendar'/></p>
            </div>}
-           {props.year && <div className='chart_header2'>
+           {props.year && <div className='chart_header2 years'>
                <div className='chart_header2box yearsChoice'>
                    <ArrowBackIcon className='chart_arrow1' style={{fontSize:'16px'}}/>
                    <ArrowForwardIcon className='chart_arrow2' style={{fontSize:'16px'}}/>
@@ -50,11 +62,9 @@ const CheckoutCards = (props) => {
                  <p  className='chart_years1'>12 Years</p>
                  <p className='chart_years2'>6 Years</p>
                </div>
-               {/* <p style={{fontSize:'10px', fontWeight:'700' }}> 2020</p> */}
            </div>}
-           <div className='chaart_container'>
+           
            <Chaart/>
-           </div>
         </Card>
     )
 }
@@ -74,8 +84,7 @@ const useStyles = makeStyles({
     backgroundColor: '#1F1B37',
       borderRadius: '10px',
       color :'white',
-      marginLeft:'20px',
-      maxHeight :'480px',
+       width:'64.5%',
       position:'relative'
     },
    

@@ -4,9 +4,10 @@
     max-height: 262px;
     margin: 5px 0px;
     padding: 5px 0px;
+    position: relative;
 }
 ::-webkit-scrollbar {
-    width: 3px;
+    width: 2px;
   }
   
   /* Track */
@@ -17,6 +18,7 @@
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #888; 
+    border-radius: 60px;
   }
   
   /* Handle on hover */
@@ -24,4 +26,12 @@
     background: #888; 
   }
 
-  
+  ::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 110px; 
+}
+
+::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 0px;
+}

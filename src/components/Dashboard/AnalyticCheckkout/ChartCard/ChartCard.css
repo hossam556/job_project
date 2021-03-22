@@ -3,25 +3,35 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
-    padding:0 10px;
-    width: 640px;
+    /* width: 640px; */
+    padding-left: 18px;
     max-width: 100%;
 }
 .chart_header1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 35%;
+    width: 30%;
     box-sizing: border-box;
-    padding-right: 20px;
 }
 .chart_header2{
     display: flex;
     justify-content: space-between;
-    padding:5px 15px;
+    padding-left: 17px;
+    padding-right: 40px;
     align-items: center;
     line-height: 15px;
+    position: relative;
+    margin-bottom: 0px;
+}
+.chart_header2_p{
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
 
+.years{
+     padding-right: 25px;
 }
 .chart_header2box{
     display: flex;
@@ -39,6 +49,7 @@
     background-color: #282443;
     padding: 12px 12px;
     border-radius: 50%;
+    margin-top: 5px;
 }
 .chart_header_a2{
     text-decoration: none;
@@ -46,16 +57,19 @@
     background-color: #282443;
     padding: 12px 12px;
     border-radius: 50%;
+    margin-top: 5px;
 }
 .chart_arrow1{
     position: absolute;
-    left: 3px;
+    left: 4px;
     cursor: pointer;
+    top: 8px;
 }
 .chart_arrow2{
     position: absolute;
-    left: 46px;
+    left: 38px;
     cursor: pointer;
+    top: 8px;
 
 }
 .chart_years{
@@ -68,15 +82,17 @@
 }
 .chart_years1{
     color: #27DAE1 ;
+    margin-bottom: 0px;
 }
 .chart_years2{
     opacity: 0.4;
+    margin-bottom: 0px;
 }
 .yearsChoice{
     width: 10.5%;
 }
-.chaart_container{
-    /* position: absolute;
-    height: 200px;
-    top: 20px; */
+
+.chart_calendar{
+    position: absolute;
+    right: 19px;
 }

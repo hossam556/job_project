@@ -12,16 +12,16 @@ const FavouriteStore = () => {
              </div>
              <Favcard 
               title='Amazon'
-              link='http://amazon.com/'/>
+              link='http://www.amazon.com/'/>
              <Favcard
               title='Target'
-              link='http://target.com/'/>
+              link='http://www.target.com/'/>
              <Favcard
               title='Walmart'
-              link='http://walmart.com/'/>
+              link='http://www.walmart.com/'/>
              <Favcard
               title='Nike'
-              link='http://nikestore.com/'/>
+              link='http://www.nikestore.com/'/>
             </div>
         </div>
     )

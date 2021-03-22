@@ -3,41 +3,72 @@
     justify-content: space-between;
     align-items: center;
     color: white;
+    padding: 5px 0px; 
+    letter-spacing: 0.5px;
+
 }
 .recent_subnav1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 20%;
+    width: 18%;
+    margin-left: 30px;
 }
 .recent_subnav2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 18%;
+    width: 20%;
     position: relative;
 }
 .recent_p1{
     font-size: 16px;
     font-weight: 700;
+    letter-spacing: 0.6px;
 }
 .recent_p2{
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 400;
+
 }
 .recent_p3{
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 400;
     opacity: 0.4;
 }
 .recent_p4{
     font-size: 10px;
-    font-weight: 700;
+    font-weight: 400;
 }
 .recent_p2{
     font-size: 12px;
     font-weight: 700;
+    margin: 4px;
 }
 .calendar_icon{
     cursor: pointer;
+}
+.underline{
+    border-top:1px solid #27DAE1;
+    width: 50%;
+    margin: auto;
+    border-radius: 8px;
+}
+.calendar_hook{
+    position: absolute;
+    display: inline-block;
+    padding: 11px 11px;
+    background-color: #312C4E;
+    right: 85px;
+    top: 38px;
+    border-radius: 4px;
+    transform: rotate(42deg);
+    z-index: 10;
+}
+.recent_calendar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95px;
+    /* margin-right: 10px; */
 }

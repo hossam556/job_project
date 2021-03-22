@@ -1,27 +1,24 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import './SelectList2.css'
+import '../../Select2/SelectList2/SelectList2.css'
 
 const useStyles = makeStyles({
     root: {
       backgroundColor: '#312C4E',
       borderRadius: '10px',
       color :'white',
-    //   padding :'20px',
       width:'107px',
-      // height:'96px',
       height:'auto',
-      position:'absolute',
+    //   position:'absolute',
       padding:'5px 0px',
-      top:'30px',
-      left:'-45px',
+    //   top:'66%',
+    //   right:'15px',
       zIndex:10,
       boxSizing:'border-box',
       display:'flex',
       flexDirection:'column',
-    //   justifyContent:'center',
-      alignItems:'flex-end'
+      textAlign:'start'
     },
     
 })
@@ -34,6 +31,7 @@ const SelectList = (props) => {
                <p onClick={props.dailyHandle} className='selectListP'>{props.day}</p>
                <p onClick={props.weeklyHandle} className='selectListP'>{props.month}</p>
                <p onClick={props.monthlyHandle} className='selectListP'>{props.year}</p>
+               <p onClick={props.anyHandle} className='selectListP'>Any Time</p>
         </Card>
     )
 }

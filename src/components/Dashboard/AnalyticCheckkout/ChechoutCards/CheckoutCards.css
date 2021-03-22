@@ -8,11 +8,10 @@
 }
 .checkout_data{
     display: flex;
-    padding: 10px;
+    padding: 10px 20px;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    height: 60%;
     position: relative;
 }
 .white_dote{
@@ -23,7 +22,7 @@
 .colored_dote{
     position: absolute;
     left: 40%;
-    top: 68%;
+    top: 66%;
 
 }
 .pinkk{
@@ -44,8 +43,8 @@
     justify-content: space-around;
 }
 .pie_div{
-    width: 60%;
+    width: 50%;
     /* height: 100px; */
     position: absolute;
-    left: -30px;
+    left: -20px;
 }

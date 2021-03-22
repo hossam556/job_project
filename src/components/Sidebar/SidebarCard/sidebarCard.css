@@ -6,24 +6,26 @@
     margin-top: 5px;
     color: white;
     display: inline-block;
-    background: #30DAD0;
+    background: #3fe7dc;
     border-radius: 8px;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
-    width: 70%;
-    padding :10px 10px;
+    width: 80%;
+    padding :10px 8px;
     font-size: 10px;
+    font-weight: 600;
     display: flex;
     justify-content: space-between;
+    letter-spacing:0.5px;
 }
 .sidebarCard_icon{
-    background-color:#22CEC4 ;
+    background-color: #20CDC3;
     display: inline-block;
-    padding :10px 10px;
+    padding :7.4px 7px;
     font-size: 10px;
     text-decoration: none;
     position: absolute;
-    right: 0;
+    right:0px ;
     top: 0px;
     border-radius: 8px;
     border-bottom-left-radius: 0;
@@ -31,13 +33,25 @@
 }
 .sidebar_date{
     font-size: 16px;
+    font-weight: 700;
+    margin-top: 0px;
 }
 .sidebarCard_btn2{
     display: inline-block;
     background-color: white;
     padding :8px 10px;
-    width: 90%;
-    color: #30DAD0;
+    width: 88%;
+    color: #27E6E2;
     border-radius: 8px;
     font-size: 12px;
+    font-weight: 700;
+}
+.renewal_container{
+    position: relative;
+}
+
+.renewal_icon{
+  position: absolute;
+  right: 12px;
+  top: 9px;
 }

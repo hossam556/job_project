@@ -8,12 +8,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 15%;
+    width: 13.5%;
 }
 .recentCheckout_p1{
     font-size: 12px;
     font-weight: 400;
+    position: relative;
+    letter-spacing: 1px;
 }
 .recentListData{
     list-style-type: none;
+}
+.recent_arrow{
+    position: absolute;
+    top: 2px;
+}
+.price{
+    padding-right: 10px;
+}
+.time{
+    padding-right: 15px;
+}
+.recentCheckout_pContainer{
+    width: 67%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

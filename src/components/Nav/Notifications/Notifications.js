@@ -12,15 +12,11 @@ const useStyles = makeStyles({
       color :'white',
       padding :'0px 10px',
       position:'absolute',
-      top:'65px',
-      left:'77%',
+      top:'66px',
+      right:'50px',
       zIndex:'10',
       maxWidth:'244px',
-      // overflowY:'scroll',
-      // overflowX:'hidden',
-      // maxHeight:'262px',
-      
-    //   boxSizing:'border-box',
+     
     },
     
 })

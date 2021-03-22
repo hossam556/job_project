@@ -1,10 +1,11 @@
 
 .select_box2{
   position: relative;
+  cursor: pointer;
 }
 .select_box2 p{
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 400;
     color: white;
     display: flex;
     justify-content: center;

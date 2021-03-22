@@ -4,7 +4,9 @@ const initialState ={
   weekly : true ,
   monthly : false ,
   yearly : false,
-  showSelectList : false
+  showSelectList : false,
+  date : 'August',
+  choosenYear :false
 };
 
 const reducer= (state = initialState , action)=>{
@@ -35,12 +37,19 @@ const reducer= (state = initialState , action)=>{
                 showSelectList:false
 
             } ;
-            case actionTypes.SHOW_SELECT_LIST :
+        case actionTypes.SHOW_SELECT_LIST :
             return{
                 ...state ,
                 showSelectList : !state.showSelectList
                 
-            }       
+            } ;
+        case actionTypes.CHOOSE_DATE :
+            return{
+                 ...state ,
+                 date : action.date,
+                 choosenYear : true
+                    
+            }                
         default : return state ;    
     }
 }

@@ -23,3 +23,10 @@ export const showSelectList =()=>{
         type : actionTypes.SHOW_SELECT_LIST
     }
 };
+
+export const chooseDate =(date)=>{
+    return{
+        type : actionTypes.CHOOSE_DATE,
+        date : date
+    }
+};

@@ -24,8 +24,6 @@ class App extends Component {
           colors:['#27DAE1','#FF3D96'],
           chart: {
             type: 'bar',
-            // height: '200px',
-            // width:'100px',
             stacked: true,
             toolbar: {
               show: false
@@ -33,26 +31,36 @@ class App extends Component {
             // offsetX: 10
             
           },
+        //   theme: {
+        //     palette: 'palette8', 
+        //     monochrome: {
+        //         enabled: false,
+        //         color: '#43BCCD',
+        //         shadeTo: 'light',
+        //         shadeIntensity: 0.65
+        //     },
+        // },
+        
           tooltip:{
              theme :true,
              style: {
-              fontSize: '12px',
-              backgroundColor:'blue'
+              fontSize: '8px',
+             
             },
-           
           },
-          grid :{
-            show:false ,
+          grid : {
+            show:true ,
             strokeDashArray: 5,
             row: {
-              opacity: 0.5
-          },  
-         padding: {
-          top: 0,
-          right: 0,
-          bottom: 0,
-          left: 15
-         },  
+              
+              opacity: 0
+            },  
+            padding: {
+              top: 0,
+              right: 20,
+              bottom: 0,
+              left: 15
+            },  
 
           },
           
@@ -61,10 +69,9 @@ class App extends Component {
           },
           plotOptions: {
             bar: {
-              borderRadius: 0,
+              borderRadius: 3,
               horizontal: false,
               columnWidth: '8%',
-          
             },
           },
           xaxis: {
@@ -100,6 +107,7 @@ class App extends Component {
           },
           legend: {
             show:false ,
+            name :['succes', 'fail']
            
           },
           fill: {
@@ -186,7 +194,7 @@ class App extends Component {
             options={this.state.options}
             series={this.state.series}
             type="bar"
-            height={280}
+            height={250}
           />
         </div>
       </div>

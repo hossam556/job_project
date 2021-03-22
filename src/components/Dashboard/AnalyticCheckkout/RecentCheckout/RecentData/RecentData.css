@@ -1,6 +1,8 @@
 .recentData_cont{
     border-bottom: 1px solid rgba(250,250,250,0.2);
     padding: 10px 20px;
+    letter-spacing: 1px;
+
 }
 .recentData{
     display: flex;
@@ -11,7 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 15%;
+    width: 13.5%;
 }
 .recentData_p{
     font-size: 12px;
@@ -20,4 +22,13 @@
 }
 .playstation{
     box-sizing: border-box;
+}
+.dollar{
+    padding-right: 5px;
+}
+.recentData2{
+    width: 76%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

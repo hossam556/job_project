@@ -8,52 +8,25 @@ import {connect} from 'react-redux'
 import * as actions from '../../store/actions/index'
 
 
+
 const Select = (props) => {
-//     const [showdrop , setshowdrop]=useState(false);
-//     const [daily , setdaily]=useState(true);
-//     const [weekly , setweekly]=useState(false);
-//     const [monthly , setmonthly]=useState(false);
-
-
-
-//     const dailyHandle=()=>{
-//          setdaily(true);
-//          setweekly(false)
-//          setmonthly(false)
-//          setshowdrop(false)
-
-
-//     }
-//     const weeklyHandle=()=>{
-//         setweekly(true)
-//         setdaily(false)
-//         setmonthly(false)
-//         setshowdrop(false)
-
-//    }
-//    const monthlyHandle=()=>{
-//         setmonthly(true)
-//         setdaily(false)
-//         setweekly(false)
-//         setshowdrop(false)
-// }
-
+     
   
 
     return (
         <div className='select_box2'>
         {
             props.week && <p onClick={props.onShowSelectList}>{props.period}
-            {props.showList ?  <ArrowDropUpIcon style={{color:'white'}}/> : <ArrowDropDownIcon style={{color:'white'}}/> }</p>
+            {props.showList ?  <ArrowDropUpIcon style={{color:'white',fontSize:'19px'}}/> : <ArrowDropDownIcon style={{color:'white',fontSize:'19px'}}/> }</p>
         } 
         {
             props.month && <p onClick={props.onShowSelectList}>Monthly
-            {props.showList ?  <ArrowDropUpIcon style={{color:'white'}}/> : <ArrowDropDownIcon style={{color:'white'}}/> } </p>
+            {props.showList ?  <ArrowDropUpIcon style={{color:'white',fontSize:'19px'}}/> : <ArrowDropDownIcon style={{color:'white',fontSize:'19px'}}/> } </p>
 
         } 
          {
             props.year && <p onClick={props.onShowSelectList}>Yearly
-            {props.showList ?  <ArrowDropUpIcon style={{color:'white'}}/> : <ArrowDropDownIcon style={{color:'white'}}/> } </p>
+            {props.showList ?  <ArrowDropUpIcon style={{color:'white',fontSize:'19px'}}/> : <ArrowDropDownIcon style={{color:'white',fontSize:'19px'}}/> } </p>
 
         } 
            {props.showList && <SelectList

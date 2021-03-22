@@ -15,3 +15,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+.apexcharts-gridlines-horizontal> * {
+  opacity: 0.1;
+}
+
+.apexcharts-gridlines-horizontal> *:last-child {
+  opacity: 0;
+}
+
+.apexcharts-bar-area{
+   /* border-bottom: 6px; */
+   /* fill-opacity: 0.4; */
+}
