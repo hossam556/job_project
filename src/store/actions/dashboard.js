@@ -30,3 +30,27 @@ export const chooseDate =(date)=>{
         date : date
     }
 };
+export const calendarDaily =()=>{
+    return{
+        type : actionTypes.CALENDAR_dAILY
+    }
+};
+
+export const calendarMonthly =()=>{
+    return{
+        type : actionTypes.CALENDAR_MONTHLY
+    }
+};
+
+export const calendarYearly =()=>{
+    return{
+        type : actionTypes.CALENDAR_YEARLY
+    }
+};
+
+export const chooseYear =(date2)=>{
+    return{
+        type : actionTypes.CHOOSE_YEAR,
+        date2 : date2
+    }
+};

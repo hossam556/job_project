@@ -18,7 +18,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 20%;
+    width: 20.2%;
     position: relative;
 }
 .recent_p1{
@@ -37,7 +37,7 @@
     opacity: 0.4;
 }
 .recent_p4{
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 400;
 }
 .recent_p2{
@@ -69,6 +69,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 95px;
+    width: 100px;
+    /* text-align: center; */
     /* margin-right: 10px; */
+}
+.calYear{
+    width: 66px;
+}
+.calYear2{
+    width: 16.6%;
+    box-sizing: border-box;
 }

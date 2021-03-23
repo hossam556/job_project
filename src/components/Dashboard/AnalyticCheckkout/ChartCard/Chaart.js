@@ -31,15 +31,6 @@ class App extends Component {
             // offsetX: 10
             
           },
-        //   theme: {
-        //     palette: 'palette8', 
-        //     monochrome: {
-        //         enabled: false,
-        //         color: '#43BCCD',
-        //         shadeTo: 'light',
-        //         shadeIntensity: 0.65
-        //     },
-        // },
         
           tooltip:{
              theme :true,
@@ -69,10 +60,11 @@ class App extends Component {
           },
           plotOptions: {
             bar: {
-              borderRadius: 3,
+              borderRadius: 2,
               horizontal: false,
-              columnWidth: '8%',
+              columnWidth: '6%',
             },
+            
           },
           xaxis: {
             type: 'category',
@@ -128,7 +120,7 @@ class App extends Component {
           ...this.state.options ,
           xaxis:{
             ...this.state.options.xaxis,
-            categories:response.data.labels
+            categories: response.data.labels
           }
         },
         series:[

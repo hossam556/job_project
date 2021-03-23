@@ -3,20 +3,19 @@ import {connect} from 'react-redux'
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import './Calendar.css'
-import CalendarItem from './CalendarItem/CalendarItem'
-import {data} from '../../CalenderData'
+import CalendarItem3 from './CalendarItem/CalendarItem3'
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import * as actions from '../../store/actions/index'
 
 
-const Calendar = (props) => {
+const Calendar3 = (props) => {
     const classes = useStyles();
 
-    let calendarItem = data.months.map((item)=><li className='calendar_list'>
-            <CalendarItem
-              name={item.short}
-              choose={()=>props.onChooseDate(item.long)}/>
+    let calendarItem = props.yearsCalendar.map((item)=><li className='calendar_list'>
+            <CalendarItem3
+              name={item}
+              choose={()=>props.onChooseYear(item)}/>
     </li>)
 
     return (
@@ -35,11 +34,11 @@ const Calendar = (props) => {
 
 const mapDispatchToProps = dispatch =>{
     return{
-        onChooseDate : (date) => dispatch(actions.chooseDate(date)) ,
+        onChooseYear : (date2) => dispatch(actions.chooseYear(date2)) ,
     }
 }
 
-export default connect(null , mapDispatchToProps)(Calendar)
+export default connect(null , mapDispatchToProps)(Calendar3)
 
 const useStyles = makeStyles({
     root: {

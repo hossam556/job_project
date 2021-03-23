@@ -7,18 +7,23 @@ const TaskGroup = () => {
         <div className={classes.task}>
           <div className={classes.container}>
             <div className={classes.title}>
-                <p className={classes.titleP}>Favourite Store</p>
+                <p className={classes.titleP}>Tasks Group</p>
                 <div className={classes.createGroup}>
                     <span className={classes.create}>Create Group</span>
                     <img src='./icons/plus.png'/>
                 </div>
             </div>
             <TaskCard/>
-            <TaskCard/>
-            <TaskCard/>
-            <TaskCard/>
-            <TaskCard/>
-            <TaskCard/>
+            <TaskCard 
+             title='#1'/>
+            <TaskCard
+             title='#2'/>
+            <TaskCard  title='#3'/>
+            <TaskCard   title='#4'/>
+            <TaskCard   title='#5'/>
+            <TaskCard   title='#5'/>
+            <TaskCard   title='#5'/>
+            <TaskCard   title='#5'/>
           </div>
         </div>
     )

@@ -4,6 +4,10 @@ import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import SelectList2 from './SelectList2/SelectList2'
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
+import * as actions from '../../store/actions/index'
+import {connect} from 'react-redux'
+
+
 
 
 
@@ -20,6 +24,7 @@ const Select2 = (props) => {
          setweekly(false)
          setmonthly(false)
         setshowdrop(false)
+        props.onCalendarDaily()
 
     }
     const weeklyHandle=()=>{
@@ -27,6 +32,7 @@ const Select2 = (props) => {
         setdaily(false)
         setmonthly(false)
         setshowdrop(false)
+        props.onCalendarMonthly()
 
    }
    const monthlyHandle=()=>{
@@ -34,11 +40,17 @@ const Select2 = (props) => {
         setdaily(false)
         setweekly(false)
         setshowdrop(false)
+        props.onCalendarYearly()
 
   }
   const handleClickAway= ()=> {
       setshowdrop(false)
   };
+
+  const openDropDown = ()=>{
+      setshowdrop(!showdrop);
+      props.close()
+  }
 
   
 
@@ -47,16 +59,16 @@ const Select2 = (props) => {
         <div >
             <div className={classes.box}>
         {
-            daily && <p onClick={()=>setshowdrop(!showdrop)}>{props.day} 
+            daily && <p onClick={openDropDown}>{props.day} 
             {showdrop ?  <ArrowDropUpIcon style={{color:'white',fontSize:'19px'}}/> : <ArrowDropDownIcon style={{color:'white',fontSize:'19px'}}/> }</p>
         } 
         {
-            weekly && <p onClick={()=>setshowdrop(!showdrop)}>{props.month}
+            weekly && <p onClick={openDropDown}>{props.month}
             {showdrop ?  <ArrowDropUpIcon style={{color:'white',fontSize:'19px'}}/> : <ArrowDropDownIcon style={{color:'white',fontSize:'19px'}}/> } </p>
 
         } 
          {
-            monthly && <p onClick={()=>setshowdrop(!showdrop)}>{props.year} 
+            monthly && <p onClick={openDropDown}>{props.year} 
             {showdrop ?  <ArrowDropUpIcon style={{color:'white',fontSize:'19px'}}/> : <ArrowDropDownIcon style={{color:'white',fontSize:'19px'}}/> } </p>
 
         } 
@@ -74,4 +86,13 @@ const Select2 = (props) => {
     )
 }
 
-export default Select2
+const mapDispatchToProps = dispatch =>{
+    return{
+        onCalendarDaily : () => dispatch(actions.calendarDaily()) ,
+        onCalendarMonthly : () => dispatch(actions.calendarMonthly()) ,
+        onCalendarYearly : () => dispatch(actions.calendarYearly()) ,
+
+    }
+}
+
+export default connect(null , mapDispatchToProps)(Select2)

@@ -1,0 +1,52 @@
+.calendar_head2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.calendar_days{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+    padding:10px 5px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: Barlow;
+
+}
+.calendar_day{
+    display: grid;
+    grid-template-columns: repeat(7 , 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+.prev_date{
+    opacity: 0.4;
+    position: relative;
+    z-index: 1;
+}
+
+.next_date{
+    opacity: 0.4;
+    position: relative;
+    z-index: 1;
+}
+.prev_back{
+    padding: 11.5px 11.5px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: -3.1px;
+    top: -2.6px;
+    opacity: 0.2;
+}
+/* .day_colored_container{
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #27DAE1;
+} */

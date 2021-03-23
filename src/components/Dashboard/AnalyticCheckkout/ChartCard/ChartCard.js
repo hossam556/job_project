@@ -10,6 +10,7 @@ import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import Chaart from './Chaart'
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import Select2 from '../../../../UI/Select2/Select2'
+import calendar from '../../../../Icons/Calendar.svg'
 
 
 const CheckoutCards = (props) => {
@@ -31,12 +32,13 @@ const CheckoutCards = (props) => {
                   <Select2 
                     day='Store'
                     month='Month'
-                    year='year'/>
+                    year='year'
+                    close={calendarHandler}/>
               </div>
            </div>
           {props.week && <div className='chart_header2'>
                <p className='chart_header2_p'><span style={{opacity:'0.4', paddingRight:'10px'}}>showing Data</span> : 12 August-25 August</p>
-               <p className='chart_header2_p'>August 2020 <img src='./icons/calendar.png' className='chart_calendar' /></p>
+               <p className='chart_header2_p'>August 2020 <img src={calendar} className='chart_calendar' /></p>
            </div>}
            {props.month && <div className='chart_header2'>
                <div className='chart_header2box'>
@@ -48,7 +50,7 @@ const CheckoutCards = (props) => {
                  <p style={{marginBottom:'0px'}}>6 Months</p>
                  <p style={{marginBottom:'0px'}}>3 Months</p>
                </div>
-               <p style={{fontSize:'10px', fontWeight:'700' ,marginBottom:'0px'}}> 2020 <img src='./icons/calendar.png' className='chart_calendar'/></p>
+               <p style={{fontSize:'10px', fontWeight:'700' ,marginBottom:'0px'}}> 2020 <img src={calendar} className='chart_calendar'/></p>
            </div>}
            {props.year && <div className='chart_header2 years'>
                <div className='chart_header2box yearsChoice'>

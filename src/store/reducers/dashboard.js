@@ -6,7 +6,11 @@ const initialState ={
   yearly : false,
   showSelectList : false,
   date : 'August',
-  choosenYear :false
+  date2 : '2020',
+  choosenYear :false ,
+  cDay : true,
+  cMonth : false,
+  cYear : false ,
 };
 
 const reducer= (state = initialState , action)=>{
@@ -49,7 +53,37 @@ const reducer= (state = initialState , action)=>{
                  date : action.date,
                  choosenYear : true
                     
-            }                
+            };
+        case actionTypes.CALENDAR_YEARLY :
+           return{
+                   ...state ,
+                   cDay : false,
+                   cMonth : false,
+                   cYear : true
+                      
+              };     
+        case actionTypes.CALENDAR_dAILY :
+            return{
+                 ...state ,
+                 cDay : true,
+                 cMonth : false,
+                 cYear : false
+                                      
+            };
+         case actionTypes.CALENDAR_MONTHLY :
+             return{
+                  ...state ,
+                  cDay : false,
+                  cMonth : true,
+                  cYear : false
+                     
+             };
+        case actionTypes.CHOOSE_YEAR :
+           return{
+                ...state ,
+                date2 : action.date2,
+                   
+           };                                                                              
         default : return state ;    
     }
 }

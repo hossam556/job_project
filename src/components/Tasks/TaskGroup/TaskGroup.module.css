@@ -2,6 +2,9 @@
     flex: 25%;
     background-color: #0E0D1F;
     box-sizing: border-box;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
     
 }
 .container{

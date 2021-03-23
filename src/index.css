@@ -26,7 +26,6 @@ code {
   opacity: 0;
 }
 
-.apexcharts-bar-area{
-   /* border-bottom: 6px; */
-   /* fill-opacity: 0.4; */
+.apexcharts-bar-area1{
+   border-radius: 60px;
 }
