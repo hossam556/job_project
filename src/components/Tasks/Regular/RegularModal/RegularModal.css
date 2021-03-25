@@ -1,0 +1,104 @@
+.regularModal{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #211D39;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 190px;
+}
+.regularModal_p{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.regularModal_selectors{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.regularModal_input{
+    display: inline-block;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 150px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(250 , 250 , 250 , 0.2);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.7;
+    position: relative;
+
+}
+/* .regularModal_input2{
+    display: inline-block;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 613px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(250 , 250 , 250 , 0.2);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+} */
+.regularmodal_arrow{
+    position: absolute;
+    right: 15px;
+    top: 44%;
+}
+.regularModal_input_container{
+    position: relative;
+}
+
+.regularModal_label{
+    position: absolute;
+    font-size: 12px;
+    font-weight: 400;
+    color: #27E6E2;
+    top: -22px;
+    left: 8px;
+    background-color: #211D39;
+    z-index: 50;
+    padding: 0px 3px;
+    letter-spacing: 0.5px;
+}
+.modalButton_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.modalButton{
+    padding: 14px 44px;
+    border-radius: 30px;
+    background-color: #27FFE3;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.regularModal_input3{
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 454px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(250 , 250 , 250 , 0.2);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.8;
+    background-color:#211D39 ;
+    color: white;
+    outline:none
+}
+::placeholder { 
+    color:    white;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+ }

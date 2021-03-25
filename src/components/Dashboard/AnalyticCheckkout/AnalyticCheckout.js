@@ -11,8 +11,8 @@ const AnalyticCheckout = () => {
     return (
         <div className='analytic'> 
            <div className='share_container'>
-           <p className='analytic_head'>Analytic Checkout</p>
-           <a className='share_wrapper'>Share <ShareIcon className='shareIcon' style={{fontSize:'13px'}}/></a>
+             <p className='analytic_head'>Analytic Checkout</p>
+             <a className='share_wrapper'>Share <ShareIcon className='shareIcon' style={{fontSize:'13px'}}/></a>
           </div>           
             <div className='analytic_cards'>
                <div className='analytic_2cards'>

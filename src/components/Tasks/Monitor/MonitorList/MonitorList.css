@@ -1,0 +1,16 @@
+.monitor_nav2{
+    padding-left: 25px;
+
+}
+.monitor_nav3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 43%;
+}
+.monitor_nav4{
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

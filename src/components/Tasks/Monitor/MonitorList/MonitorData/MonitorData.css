@@ -1,0 +1,16 @@
+.monitorData2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 42%;
+}
+.monitorData_icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 10%;
+}
+.monitorData3{
+    width: 11%;
+    padding-left: 10px;
+}

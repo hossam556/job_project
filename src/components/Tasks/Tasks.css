@@ -1,4 +1,50 @@
-.Task_content{
+.tasks_container{
     display: flex;
     height: 100%;
+}
+.taskList{
+    width: 70%;
+    color: white;
+    box-sizing: border-box;
+    padding:10px 40px;
+}
+.task_navCont{
+   display: flex;
+   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+.task_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 13%;
+}
+.task_p1{
+    font-size: 12px;
+    font-weight: 400;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    opacity: 0.4;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+}
+.task_p2{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.4;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+
+}
+.task_p2_colored{
+    border-bottom: 1px solid #27DAE1;
+    opacity: 1;
+}
+.task_p1_colored{
+    border-bottom: 1px solid #27DAE1;
+    opacity: 1;
+ 
 }

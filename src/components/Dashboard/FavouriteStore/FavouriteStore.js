@@ -8,7 +8,7 @@ const FavouriteStore = () => {
             <div className='fav_container'>
              <div className='fav_title'>
                 <p style={{fontSize:'16px' , fontWeight:'700'}}>Favourite Store</p>
-                <a href='#' className='fav_btn'>sort by <img src='./icons/chart.png' className='fav_chart'/></a>
+                <a  className='fav_btn'>sort by <img src='./icons/chart.png' className='fav_chart'/></a>
              </div>
              <Favcard 
               title='Amazon'
