@@ -1,14 +1,15 @@
 .sidebar{
     background-color: #1F1B37;
     color: white;
-    max-width: 240px;
-    /* height: 100vh; */
+    /* max-width: 240px; */
+    height: 100vh;
     z-index: 10;
-    flex: 8%;
+    flex: 14%;
+    /* width: 15%; */
     letter-spacing: 0.7px;
 }
 .sidebar_titles{
-    height: 42%;
+    height: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -19,11 +20,17 @@
 .sidebar_title{
     display: flex;
     align-items: center;
+    height: 35px;
+    width: 150px;
+    padding: 0px;
 }
 .sidebar_name{
     margin-left: 15px;
     font-size: 16px;
     font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    text-decoration-color: none;
 }
 .clicked{
     font-weight: 700;
@@ -33,7 +40,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 180px;
+    /* margin-top: 180px; */
+    margin-top: 145px;
     position: relative;
 }
 .sidebar_btn{
@@ -57,4 +65,11 @@
 .sidebar_dote{
     position: absolute;
     right: -5px;
+}
+.setting_icon{
+    padding-top: 8px;
+}
+.colored_icon{
+    padding-left: 3px;
+    color: blueviolet;
 }

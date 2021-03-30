@@ -1,0 +1,42 @@
+.proxiesModal_input_container{
+    position: relative;
+    /* height: 63%; */
+}
+.proxiesModal_input{
+    padding-top: 14px;
+    /* padding-bottom: 14px; */
+    /* padding-bottom: 230px; */
+    /* padding-right: 493px; */
+    width: 98%;
+    height: 250px;
+    /* width: 45%; */
+    /* height: 100%; */
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(250 , 250 , 250 , 0.1);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.8;
+    background-color:#211D39 ;
+    color: white;
+    outline:none;
+    background-color: #282443;
+    display: flex;
+    align-items: flex-start;
+}
+.taskPlaceholder2::placeholder{
+    color: rgba(250 , 250 , 250 , 0.4);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    height: 100%;
+    height: 500px; 
+    
+}
+.proxiesModal_input::placeholder{
+    color: rgba(250 , 250 , 250 , 0.4);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+}

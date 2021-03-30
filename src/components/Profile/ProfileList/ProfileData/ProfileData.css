@@ -1,0 +1,24 @@
+.profileData1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+.profileData2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 51%;
+}
+.profileData_icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 14%;
+}
+.profileData2_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+}

@@ -3,6 +3,7 @@ import { makeStyles , withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import './RegularModal.css'
 import arrowDown from '../../../../Icons/arrowDown.svg'
+import ModalButton from '../../../../UI/ModalButton/ModalButton'
 
 
 
@@ -30,15 +31,17 @@ const RegularModal = (props) => {
                   <a className='regularModal_input2'>0 0 0</a>  
               </div> */}
               <div className='regularModal_input_container'>
-              <p className='regularModal_label'>Quantity Task</p>
-              <input 
+                <p className='regularModal_label'>Quantity Task</p>
+                <input 
                     className='regularModal_input3'
                     placeholder='0 0 0'/>
               </div>
            </div>
-           <div className='modalButton_container'>
-               <a className='modalButton'>SUBMIT</a>
-           </div>
+           <div style={{marginTop:'25px'}}>
+                <ModalButton
+                name='SUBMIT'
+                close={props.close}/>
+            </div>
         </Card>
     )
 }

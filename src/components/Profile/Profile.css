@@ -1,0 +1,42 @@
+.profile_container{
+    display: flex;
+    color: white;
+}
+.profileList{
+  flex: 70%;
+  box-sizing: border-box;
+  padding:10px 40px;
+}
+.profileList_nav_container{
+   width: 100%;
+   border-bottom: 1px solid rgba(250, 250, 250 ,0.1);
+
+}
+.profileList_nav{
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 0.7px;
+}
+.profile_icons_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+}
+.profile_icons1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+}
+.profile_icons2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+width: 14%;
+}
+.xx{
+  left: 5px;
+}

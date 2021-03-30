@@ -186,7 +186,7 @@ class App extends Component {
             options={this.state.options}
             series={this.state.series}
             type="bar"
-            height={250}
+            height={240}
           />
         </div>
       </div>

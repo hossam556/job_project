@@ -1,0 +1,21 @@
+/* label div */
+.PrivateValueLabel-circle-20{
+    transform: rotate(0deg)  !important;
+    border-radius: 4px !important;
+    width: 35px  !important;
+    height: 20px  !important;
+    top: 50px !important;
+  }
+  
+  /* lable text */
+  .PrivateValueLabel-label-21{
+    transform: rotate(0deg) !important;
+    font-weight: 400 !important;
+    font-size: 12px !important;
+  }
+  
+  /* label container  */
+  .PrivateValueLabel-offset-19 {
+    top: 40px  !important;
+  }
+  

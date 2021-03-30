@@ -45,7 +45,7 @@ const useStyles = makeStyles({
       borderRadius: '10px',
       color :'white',
       width:'300px',
-      height:'155px',
+      height:'150px',
     },
    
 })

@@ -4,5 +4,6 @@
     grid-template-rows: auto auto;
 }
 .main{
-    flex: 92%;
+    flex: 86%;
+    /* width: 92%; */
 }

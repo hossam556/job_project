@@ -1,0 +1,19 @@
+.modalButton_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalButton{
+    padding: 14px 44px;
+    width: 75px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #27FFE3;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.gray{
+    background-color: #393652;
+}

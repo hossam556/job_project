@@ -2,7 +2,9 @@
     color: rgba(255, 255, 255, 0.4);
 }
 .nav_label{
-    width: 240px;
+    /* width: 240px; */
+    /* max-width: 240px; */
+    width: 100%;
     background-color: #282443;
     height: 70px;
     display: flex;

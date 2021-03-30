@@ -1,0 +1,112 @@
+.profileModal_options{
+    display: flex;
+    width: 33%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    margin-right: 15px;
+    height: 100%;
+}
+.profileLable {
+    background-color: #282443;
+}
+.profileInput{
+    background-color: #282443;
+    padding-right: 493px;
+}
+.profileModal_input_container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.profileInput2{
+    background-color: #282443;
+    padding-right: 130px;
+}
+.profileModal_rightbox{
+    display: flex;
+    width: 50%;
+    /* background-color: burlywood; */
+    padding-left: 10px;
+}
+.profileModal_rightbox2{
+    display: flex;
+    width: 50%;
+    /* background-color: burlywood; */
+    padding-left: 40px;
+}
+.profileModal_button_container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 35px;
+}
+.shippingButton{
+    margin-top: 0px;
+}
+.profileModal_button{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.profileModal_rightbox p{
+    margin: 0px;
+}
+.profileModal_rightbox2 p{
+    margin: 0px;
+}
+.profileModal_pinkDot{
+    position: absolute;
+    bottom: -23px;
+    left: 40%;
+}
+.profileModal_option{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.profileModal_option2{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0.4;
+}
+.profileModal_option3{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+::placeholder{
+    letter-spacing: 0.7px;
+    width: 300px;
+}
+.profileModal_general{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 510px;
+}
+.profileModal_shipping{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 380px;
+}
+
+.shippingClicked{
+    opacity: 1;
+}
+.generalcolored{
+    color: #FF3D96;
+    opacity: 1;
+}

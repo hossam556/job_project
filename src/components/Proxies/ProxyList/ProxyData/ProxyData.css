@@ -1,0 +1,31 @@
+.proxyData2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 77%;
+}
+.profileData_icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 14%;
+}
+.proxyData2_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+}
+.proxyData_pass{
+    width: 23%;
+}
+.proxyData_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 43%;
+}
+.proxyTest{
+    left: 5.5px;
+    top: 4px;
+}

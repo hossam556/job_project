@@ -71,7 +71,7 @@ const useStyles = makeStyles({
       backgroundColor: '#1F1B37',
       borderRadius: '10px',
       color :'white',
-      paddingBottom:'15px',
+      paddingBottom:'10px',
       paddingTop:'5px'
       
     },

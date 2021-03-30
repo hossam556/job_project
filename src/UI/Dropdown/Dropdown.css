@@ -1,0 +1,52 @@
+/* select list */
+.MuiList-root {
+    /* background-color: red !important; */
+  
+  }
+  .MuiList-padding {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    /* padding-left: 20px  !important; */
+  }
+  
+  
+  /* each option text  */
+  .MuiList-root option{
+    color: white;
+    padding-left: 15px;
+  }
+  .MuiList-root option:hover{
+    /* color: grey ; */
+    background-color: #3B375A;
+  }
+  
+  
+  /* placeholder color */
+  .MuiSelect-outlined.MuiSelect-outlined{
+    color: white;
+    letter-spacing: 0.7px;
+    
+  }
+  
+  
+  /* select div */
+  .MuiSelect-outlined.MuiSelect-outlined{
+    position: relative;
+    padding: 14.7px 12px !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+  }
+  
+  /* select list Div */
+  .MuiMenu-paper {
+    position: absolute  !important;
+    /* left: 250px  !important; */
+    /* top: 243px  !important; */
+    border-radius: 10px  !important;
+    min-width: 380px  !important;
+    max-width: 400px  !important;
+    background-color: #282443  !important;
+  
+  }
+
+  

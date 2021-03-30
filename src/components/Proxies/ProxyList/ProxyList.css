@@ -1,0 +1,19 @@
+.ProxyList_nav1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 5%;
+}
+.ProxyList_nav2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+}
+.proxy_status{
+    position: absolute;
+    font-size: 8px;
+    font-weight: 400;
+    top: 4px;
+    left:40px ;
+}

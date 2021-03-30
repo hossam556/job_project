@@ -44,7 +44,7 @@ const MonitorModal = (props) => {
                     placeholder='0 0 0'/>
               </div>
            </div>
-           <div className='modalButton_container'>
+           <div className='modalButton_container monitorButton'>
                <a className='modalButton'>SUBMIT</a>
            </div>
         </Card>
