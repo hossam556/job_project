@@ -15,7 +15,7 @@ const MonitorModal = (props) => {
     return (
         <Card className={classes.container} variant="outlined">
            <div className='taskModal'>
-             <p className='taskModal_title'>ADD PROXIES</p>
+             <p className='taskModal_title'>{props.title}</p>
              <a className='taskModal_x'><img src={x} className='taskModal_x1' onClick={props.close}/></a>
            </div>
            <div className='proxiesModal_input_container '>

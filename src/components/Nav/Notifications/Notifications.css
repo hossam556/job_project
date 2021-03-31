@@ -19,6 +19,7 @@
   ::-webkit-scrollbar-thumb {
     background: #888; 
     border-radius: 60px;
+    height: 10%;
   }
   
   /* Handle on hover */
@@ -28,7 +29,7 @@
 
   ::-webkit-scrollbar-track-piece:end {
     background: transparent;
-    margin-bottom: 110px; 
+    /* margin-bottom: 110px;  */
 }
 
 ::-webkit-scrollbar-track-piece:start {

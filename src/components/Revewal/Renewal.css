@@ -1,0 +1,15 @@
+.renewal_container{
+    color: white;
+    padding: 40px;
+
+}
+.renewal_container1{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-gap: 30px;
+    height: 40%;
+}
+
+.renewalItem1{
+    grid-column: 1 / 3;
+}

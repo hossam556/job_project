@@ -4,6 +4,7 @@ import Card from '@material-ui/core/Card';
 import './sidebarCard.css'
 import Show from '../../../Icons/Show.svg'
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import { Height } from '@material-ui/icons';
 
 
 const DiscordID = () => {
@@ -18,7 +19,7 @@ const DiscordID = () => {
                   </div>
                   <p style={{fontSize:'12px' , fontWeight:'600', marginBottom:'8px'}}>Expiration</p>
                   <p className='sidebar_date'>Oct 20, 2021</p>
-                  <div className='renewal_container'>
+                  <div className='renewal_card_container'>
                     <a className='sidebarCard_btn2'> Renewal<ArrowForwardIcon className='renewal_icon' style={{fontSize:'15px'}}/></a>
                   </div>
               </div>
@@ -35,8 +36,8 @@ const useStyles = makeStyles({
       color :'white',
       width:'82%',
       padding: '10px',
-      boxSizing:'border-box'
-      
+      boxSizing:'border-box',
+      // height:'180px'
       
     },
     action:{
