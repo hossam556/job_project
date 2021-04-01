@@ -2,6 +2,9 @@ import React from 'react'
 import Nav from '../Nav/Nav'
 import './Renewal.css'
 import KeyRenewal from './KeyRenewal/KeyRenewal'
+import DaysRemaining from './DaysRemaining/DaysRemaining'
+import RecentRenewal from './RecentRenewal/RecentRenewal'
+import RenewalOptions from './RenewalOptions/RenewalOptions'
 
 const Revewal = () => {
     return (
@@ -9,13 +12,11 @@ const Revewal = () => {
             <Nav title = 'Renewal'/>
             <div className='renewal_container'>
                 <div className='renewal_container1'>
-                     <div className='renewalItem1'><KeyRenewal/></div>
-                     <div>2</div>
-                     <div>3</div>
+                     <KeyRenewal/>
+                     <DaysRemaining/>
+                     <RecentRenewal/>
                 </div>
-                <div className='renewal_container2'>
-                      1
-                </div>
+                <RenewalOptions/>
             </div>
         </div>
     )

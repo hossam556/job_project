@@ -2,14 +2,23 @@
     background-color: #1F1B37;
     border-radius: 10px;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
-    letter-spacing: 0.7px;
+    letter-spacing: 0.8px;
+}
+.renewalItem1{
+    grid-column: 1 / 3;
 }
 .keyRenewal_head{
+    margin-top: 0px;
     padding: 15px 25px;
+    font-size: 16px;
+    font-weight: 700;
     border-bottom: 1px solid  rgba(250, 250, 250, 0.1);
+    letter-spacing: 3px;
+    margin-bottom: 0px;
 }
 .keyRenewal_content{
-    padding: 15px 25px;
+    padding: 10px 25px;
+    margin-top: 20px;
 }
 .keyRenewal_icon_container{
     text-decoration: none;
@@ -39,4 +48,21 @@
     border-radius: 8px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
+}
+.keyRenewal_content_p1{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.keyRenewal_content h1{
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 0px;
+}
+.keyRenewal_content_p2{
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.4;
+    margin-top: 25px;
 }

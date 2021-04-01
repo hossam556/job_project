@@ -1,0 +1,14 @@
+.recenrRenewal_content{
+  padding:10px 0px ;
+  text-align: center;
+}
+.recenrRenewal_content h1{
+    font-size: 56px;
+    font-weight: 400;
+}
+.recenrRenewal_content p{
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.4;
+    padding-top: 7px;
+}

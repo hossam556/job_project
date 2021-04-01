@@ -161,11 +161,11 @@ class App extends Component {
                 },
                 series:[
                   {
-                    name: 'PRODUCT A',
+                    name: 'Success',
                     data:response.data.succeed ,
                   },
                   {
-                    name: 'PRODUCT B',
+                    name: 'Decline',
                     data:response.data.declined ,
                   },
                 ]

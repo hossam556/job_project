@@ -34,9 +34,9 @@ const TaskGroup = () => {
             <TaskCard  title='#3'/>
             <TaskCard   title='#4'/>
             <TaskCard   title='#5'/>
-            <TaskCard   title='#5'/>
-            <TaskCard   title='#5'/>
-            <TaskCard   title='#5'/>
+            <TaskCard   title='#6'/>
+            <TaskCard   title='#7'/>
+            <TaskCard   title='#8'/>
           </div>
           {show && <Modal
                     aria-labelledby="transition-modal-title"

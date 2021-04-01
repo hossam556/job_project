@@ -1,0 +1,27 @@
+.renewalOption_container{
+    background-color: #272242;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 285px;
+}
+.renewalOption_container p{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.renewalOption_container h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.renewalOption_container h1 span{
+    font-size: 24px;
+    font-weight: 400;
+    opacity: 0.4;
+}
+.renewalOption_colored{
+    border: 1px solid #27DAE1;
+}
